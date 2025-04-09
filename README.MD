@@ -1,2 +1,2 @@
 # Weather App
-this is weather app 
+this is weather app.

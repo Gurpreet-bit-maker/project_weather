@@ -1,0 +1,57 @@
+body {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  /* flex-direction: column; */
+}
+header {
+  background-color: violet;
+  border: 1px solid;
+  color: white;
+  height: 30vh;
+  border-radius: 10px;
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  flex-direction: column;
+  width: 30%;
+  background: linear-gradient(rgb(135, 206, 250), rgb(0, 191, 255));
+}
+input {
+  height: 30px;
+  background-color: transparent;
+  border: 1px solid;
+  border-radius: 10px;
+  margin-top: 10px;
+  padding: 4px;
+}
+
+h2 {
+  color: black;
+  text-align: center;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+}
+#back {
+  box-shadow: 0px 0px 5px 2px;
+  height: 40%;
+  width: 30%;
+  padding: 20px;
+}
+
+/* js classes */
+.rainy {
+  background: linear-gradient(rgb(100, 100, 100), rgb(30, 30, 30));
+}
+.sunny {
+  background: linear-gradient(rgb(135, 206, 250), rgb(0, 191, 255));
+}
+.cloudy {
+  background: linear-gradient(rgb(176, 196, 222), rgb(119, 136, 153));
+}
+.clearnighty {
+  background: linear-gradient(rgb(25, 25, 112), rgb(0, 0, 64));
+}
+.thunderstrom {
+  background: linear-gradient(rgb(64, 64, 64), rgb(0, 0, 0));
+}
