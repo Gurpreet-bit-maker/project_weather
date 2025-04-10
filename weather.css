@@ -4,12 +4,21 @@ body {
   align-items: center;
   /* flex-direction: column; */
   /* background-color: black; */
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
 }
 header {
-  background-color: violet;
+  /* background-color: violet; */
+  background: linear-gradient(
+    to bottom,
+    rgb(97, 139, 183),
+    rgb(130, 102, 140),
+    rgb(230, 169, 122),
+    rgb(255, 106, 47)
+  );
   border: 3px solid greenyellow;
   color: white;
-  height: 50vh;
+  height: 60vh;
   border-radius: 10px;
   display: flex;
   /* justify-content: center; */
@@ -17,7 +26,19 @@ header {
   flex-direction: column;
   width: 40%;
   position: relative;
-  /* background: linear-gradient(rgb(135, 206, 250), rgb(0, 191, 255)); */
+  
+  opacity: 0.9;
+}
+#input-section {
+  width: 80%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+#temp {
+  font-size: 42px;
+  letter-spacing: 2px;
+  margin-left: 20px;
 }
 input {
   height: 30px;
@@ -28,119 +49,124 @@ input {
   padding: 4px;
   border: 3px solid;
 }
+#btn {
+  height: 5vh;
+  margin-top: 12px;
+  margin-left: 5px;
+  border-radius: 5px;
+  position: absolute;
+  right: 10px;
+}
 
-h2 {
+h4 {
+  margin-top: 8px;
+}
+h3 {
   color: black;
-  text-align: center;
-  text-transform: capitalize;
-  letter-spacing: 1px;
-  border: 3px solid;
+  margin-bottom: 8px;
+  margin-top: 0px;
+  font-weight: bold;
 }
 #back {
   box-shadow: 0px 0px 5px 2px;
-  height: 100%;
+  height: 34%;
   width: 30%;
   padding: 20px;
   border: 3px solid;
-  background-color: white;
 }
-::placeholder {
-  color: white;
-}
+
 img {
   width: 45%;
   height: 51%;
-  bottom: 20px;
-
+  bottom: 128px;
+  border: none;
   position: absolute;
+  left: 127px;
+}
+#cloudy {
+  text-align: center;
 }
 
 /* js classes */
 /* Clear */
 .clear {
   background-color: rgb(149, 211, 228); /* Sky Blue */
-  border: 3px solid greenyellow;
+  transition: all 0.4s ease-in-out;
 }
 
 /* Clouds */
 .cloud {
-  background-color: rgb(72, 73, 74); /* Light Steel Blue */
-  border: 3px solid greenyellow;
+  background: rgb(230, 227, 215);
+  transition: all 0.4s ease-in-out;
 }
 
 /* Rain */
 .rain {
-  background-color: rgb(100, 149, 237); /* Cornflower Blue */
-  border: 3px solid greenyellow;
+  background-color: rgb(100, 149, 237);
+  transition: all 0.4s ease-in-out;
 }
 
 /* Drizzle */
 .drizzle {
-  background-color: rgb(176, 224, 230); /* Powder Blue */
+  background-color: rgb(176, 224, 230);
 }
 
 /* Thunderstorm */
 .thunderstorm {
-  background-color: rgb(72, 61, 139); /* Dark Slate Blue */
+  background-color: rgb(72, 61, 139);
 }
 
 /* Snow */
 .snow {
-  background-color: rgb(240, 248, 255); /* Alice Blue */
-  border: 3px solid greenyellow;
+  background-color: rgb(240, 248, 255);
 }
 
 /* Mist */
 .mist {
-  background-color: rgb(211, 211, 211); /* Light Gray */
-  border: 3px solid greenyellow;
+  background-color: rgb(211, 211, 211);
 }
 
 /* Smoke */
 .smoke {
-  background-color: rgb(105, 105, 105); /* Dim Gray */
+  background-color: rgb(105, 105, 105);
 }
 
 /* Haze */
 .haze {
-  background-color: rgb(192, 192, 192); /* Silver */
+  background-color: rgb(192, 192, 192);
 }
 
 /* Fog */
 .fog {
-  background-color: rgb(169, 169, 169); /* Dark Gray */
+  background-color: rgb(169, 169, 169);
 }
 
 /* Sand */
 .sand {
-  background-color: rgb(222, 184, 135); /* BurlyWood */
+  background-color: rgb(222, 184, 135);
 }
 
 /* Dust */
 .dust {
   border: 3px solid;
 
-  background-color: rgb(210, 180, 140); /* Tan */
+  background-color: rgb(210, 180, 140);
 }
 
 /* Ash */
 .ash {
-  background-color: rgb(119, 136, 153); /* Light Slate Gray */
+  background-color: rgb(119, 136, 153);
   border: 3px solid greenyellow;
 }
 
 /* Squall */
 .squall {
-  background-color: rgb(47, 79, 79); /* Dark Slate Gray */
-  border: 3px solid greenyellow;
-  background-color: rgb(47, 79, 79); /* Dark Slate Gray */
+  background-color: rgb(47, 79, 79);
   border: 3px solid greenyellow;
 }
 
 /* Tornado */
 .tornado {
-  background-color: rgb(70, 70, 70); /* Dark Grayish */
-  border: 3px solid greenyellow;
-  background-color: rgb(70, 70, 70); /* Dark Grayish */
+  background-color: rgb(70, 70, 70);
   border: 3px solid greenyellow;
 }
