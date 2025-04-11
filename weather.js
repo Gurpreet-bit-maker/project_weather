@@ -15,14 +15,14 @@ btn.addEventListener("click", async function () {
     let url = `https://api.openweathermap.org/data/2.5/weather?q=${searchInput.value}&appid=${key}&units=metric`;
     let result = await fetch(url);
     let originData = await result.json();
-    let forcast = `https://api.openweathermap.org/data/2.5/forecast?q=${searchInput.value}&appid=${key}&units=metric
-`;
-    let res = await fetch(forcast);
-    let resu = await res.json();
-    console.log(resu);
-    resu.list.forEach((element) => {
-      console.log(element);
-    });
+    //     let forcast = `https://api.openweathermap.org/data/2.5/forecast?q=${searchInput.value}&appid=${key}&units=metric
+    // `;
+    //     let res = await fetch(forcast);
+    //     let resu = await res.json();
+    //     console.log(resu);
+    //     resu.list.forEach((element) => {
+    //       console.log(element);
+    //     });
     let apiIcon;
     let srcId;
     // if saurce code 200
@@ -40,7 +40,6 @@ btn.addEventListener("click", async function () {
       if (originData.weather[0].main == "Clear") {
         cityName.innerText = originData.name;
         h3.innerText = `${weekday}, ${month} ${day}`;
-
         apiIcon = originData.weather[0].icon;
         srcId = `https://openweathermap.org/img/wn/${apiIcon}@2x.png`;
         imgIcon.src = srcId;
@@ -83,12 +82,18 @@ btn.addEventListener("click", async function () {
     } else {
       if (searchInput.value == "") {
         alert("please enter city");
-        cityName.innerText = "";
+        cityName.innerText = "Welcome to weather app";
+        h3.innerText = "";
+        cloudy.innerText = "";
+        temp.innerText = "";
         document.querySelector("img").remove();
         backBackDiv.classList.remove("cloud");
         backBackDiv.classList.remove("rain");
         backBackDiv.classList.remove("clear");
         console.log("search empty");
+        location.reload(); //! impotent good
+      } else {
+        alert("wrong enter");
       }
     }
     searchInput.value = "";

@@ -26,7 +26,7 @@ header {
   flex-direction: column;
   width: 40%;
   position: relative;
-  
+
   opacity: 0.9;
 }
 #input-section {
@@ -49,6 +49,10 @@ input {
   padding: 4px;
   border: 3px solid;
 }
+input ,::placeholder
+{
+  color: white;
+}
 #btn {
   height: 5vh;
   margin-top: 12px;
@@ -56,10 +60,21 @@ input {
   border-radius: 5px;
   position: absolute;
   right: 10px;
+  width: 15%;
+  border: 1px solid;
+}
+#btn:hover {
+  background-color: black;
+  color: white;
+}
+#btn:active {
+  background-color: blue;
 }
 
 h4 {
   margin-top: 8px;
+  text-decoration: underline;
+  color: yellow;
 }
 h3 {
   color: black;
@@ -78,10 +93,10 @@ h3 {
 img {
   width: 45%;
   height: 51%;
-  bottom: 128px;
+  bottom: 138px;
   border: none;
   position: absolute;
-  left: 127px;
+  left: 175px;
 }
 #cloudy {
   text-align: center;
